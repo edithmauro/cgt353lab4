@@ -1,0 +1,103 @@
+#header h1{
+    text-align: center;
+    background-color: #EAEAEA;
+    border-color: #9D9D9D;
+    border-style: solid;
+    padding: 10px;
+}
+
+#header img{
+    width: 100%;
+}
+
+#webpage {
+    /*background-color:  whitesmoke;*/
+    background-image: linear-gradient(lightblue, lightyellow);
+    padding: 10px;
+}
+
+#nav{
+    overflow: hidden;
+    background-color: #000;
+}
+#nav a{
+    float: left;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.centerText{
+    text-align: center;
+    background-color: #FFF;
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+    border-color: #9D9D9D;
+    padding: 5px;
+}
+
+#ingredients h3{
+    margin-left: 12.5%;
+}
+
+#ingredients button{
+    display: block;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+#ingredients tbody{
+    font-weight: none;
+}
+
+#ingredients table{
+    border-collapse: collapse;
+    background-color: rgba(0,0,0,0.1);
+    margin-left:auto; 
+    margin-right:auto;
+ }
+
+#ingredients table th, td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+#ingredients table thead tr:first-child{
+    background-color: rgba(255,255,255,0.6);
+}
+
+#ingredients table tr td:nth-child(2){
+    width: 50%;
+}
+
+.centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p{
+    text-align: center;
+    font-size: auto;
+}
+
+.divMargin{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.centerCenterImage{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.hThree, h4{
+    text-align: center;
+}

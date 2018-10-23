@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel='stylesheet' type='text/css' href="css/styles.css">
+        <meta charset="UTF-8">
+
+        <title>Simple Spaghetti Dinner</title>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+
+        <script>
+    $(document).ready(function(){
+        //Table: Queue - change height, width, and fontsize
+            $("#ingredients button").click(function(){
+                var div = $("#ingredients table");
+                div.animate({height: 500}, "slow");
+                div.animate({height: 200}, "slow");
+                div.animate({width: '100%'}, "slow");
+                div.animate({height: 500}, "slow");
+                div.animate({fontSize: '25px'}, "slow");
+            });
+
+        //All Arrows - Slide On Hover
+        $(".upDown img").hover(function() {
+            $(this).slideToggle(1000);
+        });
+
+        //Pasta and Sauce Image - opacity changes on hover
+        $("#sauceImage img").hover(function(){
+            $(this).animate({opacity: "0.7"});
+        });
+        $("#pastaImage img").hover(function(){
+            $(this).animate({opacity: "0.7"});
+        });
+    });
+        
+        
+        </script>
+
+    </head>
+    <header>
+            <div Id = "nav"> 
+                    <a class="active" href="index.html">Home</a>
+                    <a href="https://www.allrecipes.com/recipes/505/main-dish/pasta/spaghetti/" target="_blank" >Recipies</a>
+                </div> 
+    </header>
+    <body>
+<div id = webpage> 
+
+    <div id = header>
+        <h1>How to Make a Simple Spaghetti Dinner</h1>
+        <img src="images/pasta-banner-1-870x259.jpg" alt = "Pasta Header"> <!--http://www.irisimport.com/en/products/gentile-spaghetti-2/-->
+
+    </div>
+
+    <h2 class = "centerText">Gathering Ingredients</h2>
+
+    <div class = "upDown">
+    <img class = "centerImage" src="images/down-grey-arrow-hi.png" height = "40px" width = "40px" alt="down arrow">
+    </div>
+     <!--arrow imsge source: http://www.clker.com/clipart-down-grey-arrow.html-->
+
+    <div id = ingredients>
+        <h3>In order to cook the meal, first you'll need the following ingredients:</h3>
+       
+        <button>Click to Enlarge (queue)</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Ingredient
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Spaghetti
+                    </td>
+                    <td>
+                        1 Box
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prego Chunky Garden Tomato Sauce
+                    </td>
+                    <td>
+                        1 Jar, Medium
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Can of Crushed Tomatoes
+                    </td>
+                    <td>
+                        1 Can, Medium
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        White Onion
+                    </td>
+                    <td>
+                        1/2, Large
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Mushrooms
+                    </td>
+                    <td>
+                        2-3, Large
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Red Pepper Flakes and Dried Basil
+                    </td>
+                    <td>
+                        To Taste
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salt & Pepper
+                    </td>
+                    <td>
+                        To Taste
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+
+    </div>
+
+    <h2 id = cookPastaBreak class = centerText>Cooking the Pasta</h2>
+
+    <div class = "upDown">
+            <img class = "centerImage" src="images/down-grey-arrow-hi.png" height = "40px" width = "40px" alt="down arrow">
+    </div>
+    <!--arrow imsge source: http://www.clker.com/clipart-down-grey-arrow.html-->
+
+
+    <div id = cookPasta class = "divMargin">
+        <h3 class = "hThree">After obtaining all the ingridients, now you can actually cook the pasta.</h3>
+        <p>In order to cook the spaghetti, fill a fairly large pot with water.  There is no such thing as too much water to put into the pot.  Too little water, however could cause the raw pasta to burn triggering a possible housefire and very angry roommates.  After filling up the pot, place it on a stove burner and set the temperature to 'high.'  It will take the water about 8-10 minutes to boil depending on how great your stove top is.</p>
+        
+        <p>At this point, you may start cooking your sauce since the water will take a hot second before boiling. (See <a href="#cookSauce">Sauce</a>)</p>
+        
+        <p>Once the water is boiling, take about half of the spaghetti out of the box and place it into the boiling water.  After placing the spaghetti into the pot, lower the heat from 'high' to 'medium,' and periodically stir the pasta to ensure even cooking.  At this point, you should also put a couple of pinches of salt into the pot.  My grandmother told me that the water needs to be salty like the ocean. If you notice the water begin to boil over at any point that the pasta is in the pot, lower the heat. Also stir the pot every so often so that the pasta doesn't stick to the bottom of the pan</p>
+
+        <p>After about 5 minutes, get a fork and take a piece of spaghetti out of the pot to taste.  If it is crunchy, then allow the pasta to continue cooking for another couple of minutes before taste testing again.  If the pasta is soft, or seems firm (aldente), then turn the heat off and take the pot off the stove.  Then dump the pasta into a strainer, and rinse with cold water.  Rinsing with cold water makes the pasta not stick.</p>
+
+    </div>
+
+    <div id = "pastaImage" class = "centerCenterImage">
+            <img src="images/boil_pasta.jpg" alt = "boiling pasta">
+            <!--Source: https://www.dailymail.co.uk/femail/food/article-4054610/Does-make-difference-add-pasta-cold-boiling-water-Italian-restaurant-chefs-n-Reddit-claim-answer.html-->
+    </div>
+    
+    <h2 class = centerText>Making the Sauce</h2>
+
+    <div class = "upDown">
+            <img class = "centerImage" src="images/down-grey-arrow-hi.png" height = "40px" width = "40px" alt="down arrow">
+    </div>
+
+
+<div id = "cookSauce" class = "divMargin">
+    <h3 class = "hThree">This part of the tutorial is crucial because a bad sauce makes a bad meal.</h3>
+    <p>Chop the white onion and mushrooms and place into a nonstick pan on a hot stovetop with a little bit of olive oil.  Stir around the vegetables until they are soft.  While cooking the onions and mushrooms, get a semi large pot and pour the sauce and tomatoes from the can into it.  Place the pot on a hot stovetop and let simmer. Stir periodically so that the sauce does not burn.  Once the sauce is boiling, turn the heat down and add the cooked mushrooms and onions.  After about 5 minutes, put seasonings (pepper, red pepper flakes, and dried basil) into the sauce pot and stir.</p>
+
+    <p>Taste the sauce to determine if it is cooked and seasoned to preference.  If the sauce seems too watery, put about half a teaspoon of flour into it, to help thicken it up.  Also, don't worry if the spaghetti isn't as hot once the sauce is done.  The sauce will be hot enough to provide heat to the overall dish.</p>
+
+    <p>Once your meal is complete, do not store leftovers in fridge right away.  The sauce will become sour if it is placed in the fridge hot.  Instead, leave the sauce out to cool in the storage container of choice until it is about room temperature.</p>
+    </div>
+<div id = "sauceImage" class = "centerCenterImage">
+    <img src="images/sauce.jpg" alt = "sauce">
+    <!--Source: https://www.thekitchn.com/how-to-make-basic-tomato-sauce-with-fresh-tomatoes-cooking-lessons-from-the-kitchn-193622-->
+
+</div>
+
+<br>
+<hr>
+<hr>
+
+</div>
+    </body>
+
+<footer>
+    <h4>See 'Recipies' Link Featured in the NavBar for Other Pasta Recipies</h4>
+    <p>Arrow: Hover - slide toggle | Table: On Click (btn) - changes height, width, and font size | Boiling Water and Sauce Image: On Hover - opacity decreases</p>
+</footer>
+
+</html>
